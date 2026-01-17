@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globfam - Luxury Residences</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Intl Tel Input CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+</head>
+
+<body>
+
+    <!-- Header / Logo -->
+    <header class="main-header text-start mt-4">
+        <div class="container">
+            <!-- <h1 class="logo text-white mt-4">GLOBFAM</h1> -->
+            <img src="assets/img/logo.png" alt="Globfam Realty" class="img-fluid">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-end">
+        <!-- Video Background -->
+        <video autoplay muted loop id="heroVideo" class="hero-video">
+            <source src="assets/video/background.mp4" type="video/mp4">
+            <!-- Fallback image if video fails or not present -->
+            Your browser does not support HTML5 video.
+        </video>
+
+        <!-- Dark Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Hero Content -->
+        <div class="container hero-content text-center text-lg-start text-white pb-5 mb-4">
+            <div class="row justify-content-center justify-content-lg-start">
+                <div class="col-12 col-lg-10 mb-4">
+                    <h2 class="display-4 hero-title">Luxury Residences Starting<br>From AED 1.7 Mn*</h2>
+                </div>
+
+                <!-- Desktop Form (Visible on md and up) -->
+                <div class="col-12 d-none d-md-block">
+                    <form class="desktop-register-form">
+                        <div class="row g-2 justify-content-start">
+                            <div class="col-md-3">
+                                <input type="text" class="form-control form-control-dark" placeholder="Full Name"
+                                    required>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="email" class="form-control form-control-dark" placeholder="Email Address"
+                                    required>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="tel" id="heroPhone" class="form-control form-control-dark"
+                                    placeholder="Phone Number" required>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit"
+                                    class="btn btn-dark w-100 text-uppercase fw-bold">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Mobile Button (Visible on sm and down) -->
+                <div class="col-12 d-md-none">
+                    <button type="button" class="btn btn-dark btn-lg px-5 py-3 text-uppercase" data-bs-toggle="modal"
+                        data-bs-target="#registerModal">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-light text-center">
+        <div class="container py-4">
+            <h3 class="cta-title mb-3">Invest in Dubai with the creators of Burj Khalifa & Dubai Mall.</h3>
+            <p class="cta-subtitle lead mb-4 text-muted">Discover exclusive homes with high-ROI in the world’s
+                fastest-growing city.</p>
+            <button class="btn btn-dark btn-lg px-4 py-2 px-md-5 py-md-3 rounded-0 text-uppercase"
+                data-bs-toggle="modal" data-bs-target="#registerModal">Request a Call</button>
+        </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="projects-section py-5 ">
+        <div class="container py-4 px-md-3">
+            <h2 class="text-center section-title mb-5 text-uppercase">EXPLORE OUR LATEST LAUNCHES</h2>
+
+            <div class="row g-4">
+                <!-- Project Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://placehold.co/600x500/e0e0e0/aaa?text=Vindera"
+                                class="card-img-top rounded-0" alt="Vindera">
+                        </div>
+                        <div class="card-body px-0 pt-3">
+                            <p class="project-type text-uppercase text-muted mb-1 small">Luxury Residences</p>
+                            <h4 class="project-name mb-3">VINDERA</h4>
+                            <div class="project-meta text-muted small mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i> The Valley
+                            </div>
+                            <div class="project-meta text-muted small mb-4">
+                                <i class="fas fa-dollar-sign me-2"></i> From: AED 3.17 Mn <span class="ms-2">USD
+                                    863K</span><span class="ms-2">INR 3CR</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark w-100 rounded-0 py-2" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://placehold.co/600x500/d0d0d0/999?text=Chevalia"
+                                class="card-img-top rounded-0" alt="Chevalia">
+                        </div>
+                        <div class="card-body px-0 pt-3">
+                            <p class="project-type text-uppercase text-muted mb-1 small">Luxury Villas</p>
+                            <h4 class="project-name mb-3">CHEVALIA ESTATE 2</h4>
+                            <div class="project-meta text-muted small mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i> Grand Polo Club & Resort
+                            </div>
+                            <div class="project-meta text-muted small mb-4">
+                                <i class="fas fa-dollar-sign me-2"></i> From: AED 7.8 Mn <span class="ms-2">USD 2.12
+                                    Mn</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark w-100 rounded-0 py-2" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://placehold.co/600x500/c0c0c0/888?text=Sera+2"
+                                class="card-img-top rounded-0" alt="Sera 2">
+                        </div>
+                        <div class="card-body px-0 pt-3">
+                            <p class="project-type text-uppercase text-muted mb-1 small">Luxury Apartments</p>
+                            <h4 class="project-name mb-3">SERA 2</h4>
+                            <div class="project-meta text-muted small mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i> Rashid Yachts & Marina
+                            </div>
+                            <div class="project-meta text-muted small mb-4">
+                                <i class="fas fa-dollar-sign me-2"></i> From: AED 2.1 Mn <span class="ms-2">USD
+                                    571K</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark w-100 rounded-0 py-2" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://placehold.co/600x500/b0b0b0/777?text=Montiva"
+                                class="card-img-top rounded-0" alt="Montiva">
+                        </div>
+                        <div class="card-body px-0 pt-3">
+                            <p class="project-type text-uppercase text-muted mb-1 small">Branded Apartments</p>
+                            <h4 class="project-name mb-3">MONTIVA BY VIDA</h4>
+                            <div class="project-meta text-muted small mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i> Dubai Creek Harbour
+                            </div>
+                            <div class="project-meta text-muted small mb-4">
+                                <i class="fas fa-dollar-sign me-2"></i> From: AED 1.91 Mn <span class="ms-2">USD
+                                    520K</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark w-100 rounded-0 py-2" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://placehold.co/600x500/a0a0a0/666?text=Baystar"
+                                class="card-img-top rounded-0" alt="Baystar">
+                        </div>
+                        <div class="card-body px-0 pt-3">
+                            <p class="project-type text-uppercase text-muted mb-1 small">Branded Apartments</p>
+                            <h4 class="project-name mb-3">BAYSTAR BY VIDA</h4>
+                            <div class="project-meta text-muted small mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i> Rashid Yachts & Marina
+                            </div>
+                            <div class="project-meta text-muted small mb-4">
+                                <i class="fas fa-dollar-sign me-2"></i> From: AED 2.1 Mn <span class="ms-2">USD
+                                    571K</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark w-100 rounded-0 py-2" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://placehold.co/600x500/909090/555?text=Rosehill"
+                                class="card-img-top rounded-0" alt="Rosehill">
+                        </div>
+                        <div class="card-body px-0 pt-3">
+                            <p class="project-type text-uppercase text-muted mb-1 small">Luxury Apartments</p>
+                            <h4 class="project-name mb-3">ROSEHILL</h4>
+                            <div class="project-meta text-muted small mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i> Dubai Hills Estate
+                            </div>
+                            <div class="project-meta text-muted small mb-4">
+                                <i class="fas fa-dollar-sign me-2"></i> From: AED 1.6 Mn <span class="ms-2">USD
+                                    435K</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark w-100 rounded-0 py-2" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Invest in Dubai Section -->
+    <section class="why-dubai-section py-5 text-center bg-white">
+        <div class="container py-4">
+            <hr class="section-divider mb-5 mx-auto opacity-25">
+            <h2 class="section-title mb-5 text-uppercase border-0">WHY INVEST IN DUBAI</h2>
+            <hr class="section-divider mb-5 mx-auto opacity-25">
+
+
+            <div class="row g-4 g-lg-5 justify-content-center mb-5">
+                <!-- Item 1 -->
+                <div class="col-6 col-lg-3">
+                    <div class="benefit-item">
+                        <div class="icon-circle mb-4 mx-auto">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <p class="benefit-text mb-0 px-2">Fetch high rental yields of 5%-9% annually.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-6 col-lg-3">
+                    <div class="benefit-item">
+                        <div class="icon-circle mb-4 mx-auto">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <p class="benefit-text mb-0 px-2">Prices per sqft lower than many global cities.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-6 col-lg-3">
+                    <div class="benefit-item">
+                        <div class="icon-circle mb-4 mx-auto">
+                            <i class="fas fa-percent"></i>
+                        </div>
+                        <p class="benefit-text mb-0 px-2">No additional property taxes post-purchase.</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="col-6 col-lg-3">
+                    <div class="benefit-item">
+                        <div class="icon-circle mb-4 mx-auto">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <p class="benefit-text mb-0 px-2">UAE golden visa for property investors.</p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="col-6 col-lg-3">
+                    <div class="benefit-item">
+                        <div class="icon-circle mb-4 mx-auto">
+                            <i class="fas fa-plane-departure"></i>
+                        </div>
+                        <p class="benefit-text mb-0 px-2">Direct flights from major global cities.</p>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="col-6 col-lg-3">
+                    <div class="benefit-item">
+                        <div class="icon-circle mb-4 mx-auto">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                        <p class="benefit-text mb-0 px-2">Top malls, hotels, beaches & attractions.</p>
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="col-6 col-lg-3">
+                    <div class="benefit-item">
+                        <div class="icon-circle mb-4 mx-auto">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <p class="benefit-text mb-0 px-2">Safe, inclusive for families & individuals.</p>
+                    </div>
+                </div>
+                <!-- Item 8 -->
+                <div class="col-6 col-lg-3">
+                    <div class="benefit-item">
+                        <div class="icon-circle mb-4 mx-auto">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <p class="benefit-text mb-0 px-2">Leading business hub for global investors.</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="section-divider mb-5 mx-auto opacity-25">
+
+
+
+            <button class="btn btn-dark btn-lg px-4 py-2 px-md-5 py-md-3 rounded-0 text-uppercase"
+                data-bs-toggle="modal" data-bs-target="#registerModal">Request a Call</button>
+        </div>
+    </section>
+
+    <!-- Why Invest in Globfam (Stats) Section -->
+    <section class="stats-section py-5 bg-dark-blue text-white text-center">
+        <div class="container py-4">
+            <h2 class="section-title text-white mb-5 text-uppercase">WHY INVEST IN GLOBFAM</h2>
+
+            <div class="row g-4">
+                <div class="col-md-6 text-start">
+                    <div class="stat-card p-4 d-flex align-items-center h-100">
+                        <div class="stat-icon me-3">
+                            <i class="fas fa-home fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="stat-number mb-1 text-gold">118,400+</h3>
+                            <p class="stat-desc small mb-0 text-white-50">Residential Units Delivered Globally (As of FY
+                                2024)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-start">
+                    <div class="stat-card p-4 d-flex align-items-center h-100">
+                        <div class="stat-icon me-3">
+                            <i class="fas fa-hard-hat fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="stat-number mb-1 text-gold">50,500</h3>
+                            <p class="stat-desc small mb-0 text-white-50">Residential Units Currently Under Development
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-start">
+                    <div class="stat-card p-4 d-flex align-items-center h-100">
+                        <div class="stat-icon me-3">
+                            <i class="fas fa-globe fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="stat-number mb-1 text-gold">10+ Countries</h3>
+                            <p class="stat-desc small mb-0 text-white-50">Global Market Presence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-start">
+                    <div class="stat-card p-4 d-flex align-items-center h-100">
+                        <div class="stat-icon me-3">
+                            <i class="fas fa-chart-bar fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="stat-number mb-1 text-gold">AED 35.5 Bn*</h3>
+                            <p class="stat-desc small mb-0 text-white-50">Revenue</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footprint Section -->
+    <section class="footprint-section py-5 text-center bg-white">
+        <div class="container py-4">
+            <h2 class="section-title mb-5 text-uppercase border-0">GLOBFAM FOOTPRINT</h2>
+            <div class="map-container position-relative w-100 shadow-sm"
+                style="padding-bottom: 45%; height: 0; overflow: hidden; background: #f8f9fa;">
+                <!-- Demo Location: Burj Khalifa -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14436.467882260775!2d55.26768393520556!3d25.197197003460613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
+                    class="position-absolute top-0 start-0 w-100 h-100 border-0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- <div class="py-4">
+                <h2 class="logo text-dark mt-4" style="letter-spacing: 5px;">GLOBFAM</h2>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-3 bg-white border-top">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center align-items-center gap-4 mb-3">
+                <a href="#" class="text-muted text-decoration-none small text-uppercase"
+                    style="font-size: 0.75rem;">Privacy Policy</a>
+                <span class="text-muted small">|</span>
+                <a href="#" class="text-muted text-decoration-none small text-uppercase"
+                    style="font-size: 0.75rem;">Terms & Conditions</a>
+            </div>
+            <div class="text-muted small" style="font-size: 0.7rem;">
+                &copy; 2026 Globfam. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 pb-5">
+                    <h3 class="modal-title mb-2 text-uppercase" id="registerModalLabel">Register<br>Your Interest</h3>
+                    <p class="text-muted mb-4 small">Submit your details to connect with our real estate experts and
+                        discover your next investment opportunity.</p>
+
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" id="modalPhone" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="newsCheck">
+                            <label class="form-check-label small text-muted" for="newsCheck">Keep me updated on news and
+                                offers</label>
+                        </div>
+                        <div class="mb-4 text-muted small disclaimer">
+                            Please visit <a href="#" class="text-decoration-underline text-muted">privacy policy</a> to
+                            understand how Globfam handles your personal data.
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 py-2 text-uppercase">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Intl Tel Input JS -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script>
+        // Initialize International Telephone Input
+        let itiDesktop;
+        const inputDesktop = document.querySelector("#heroPhone");
+        if (inputDesktop) {
+            itiDesktop = window.intlTelInput(inputDesktop, {
+                initialCountry: "ae",
+                preferredCountries: ["ae", "gb", "us", "in", "sa"],
+                utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+            });
+        }
+
+        let itiModal;
+        const inputModal = document.querySelector("#modalPhone");
+        if (inputModal) {
+            itiModal = window.intlTelInput(inputModal, {
+                initialCountry: "ae",
+                preferredCountries: ["ae", "gb", "us", "in", "sa"],
+                utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+            });
+        }
+
+        // Handle Form Submissions
+        document.addEventListener('DOMContentLoaded', function () {
+            // Desktop Form
+            const desktopForm = document.querySelector('.desktop-register-form');
+            if (desktopForm) {
+                desktopForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    // Get values
+                    const name = desktopForm.querySelector('input[placeholder="Full Name"]').value;
+                    const email = desktopForm.querySelector('input[placeholder="Email Address"]').value;
+                    const phone = itiDesktop ? itiDesktop.getNumber() : inputDesktop.value;
+
+                    console.log('--- Desktop Form Submission ---');
+                    console.log('Name:', name);
+                    console.log('Email:', email);
+                    console.log('Phone:', phone);
+
+                    // Reset form optional
+                    // desktopForm.reset();
+                });
+            }
+
+            // Modal Form
+            const modalForm = document.querySelector('#registerModal form');
+            if (modalForm) {
+                modalForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    // Get values
+                    const name = modalForm.querySelector('input[placeholder="Full Name"]').value;
+                    const email = modalForm.querySelector('input[placeholder="Email Address"]').value;
+                    const phone = itiModal ? itiModal.getNumber() : inputModal.value;
+
+                    console.log('--- Modal Form Submission ---');
+                    console.log('Name:', name);
+                    console.log('Email:', email);
+                    console.log('Phone:', phone);
+
+                    // Close modal optional
+                    // const modalEl = document.querySelector('#registerModal');
+                    // const modal = bootstrap.Modal.getInstance(modalEl);
+                    // modal.hide();
+                });
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+    //     const phoneInput = document.querySelector("#phone");
+
+    // const iti = window.intlTelInput(phoneInput, {
+    // initialCountry: "ae",
+    // preferredCountries: ["ae", "in", "us", "gb"],
+    // utilsScript:
+    //     "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+    // });
+
+    // document.getElementById("contactForm").addEventListener("submit", function () {
+
+    // document.getElementById("phone_full").value = iti.getNumber();
+
+    // const country = iti.getSelectedCountryData();
+    // document.getElementById("country_name").value = country.name;
+    // document.getElementById("country_code").value = country.dialCode;
+    // });
+
+    </script>
+</body>
+
+</html>

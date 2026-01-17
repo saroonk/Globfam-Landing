@@ -1,0 +1,490 @@
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+.modal-title,
+.hero-title {
+    font-family: 'Cinzel', serif;
+}
+
+/* Header */
+.main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.main-header img {
+    max-height: 80px !important;
+}
+
+@media (max-width: 768px) {
+    .main-header img {
+        max-height: 60px !important;
+    }
+}
+
+.logo {
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-weight: 400;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+/* Desktop Form Styles */
+.form-control-dark {
+    background-color: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 0;
+    padding: 10px 15px;
+}
+
+.form-control-dark::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-control-dark:focus {
+    background-color: rgba(30, 30, 30, 0.8);
+    border-color: #fff;
+    color: #fff;
+    box-shadow: none;
+}
+
+.form-select-dark {
+    background-color: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 0;
+}
+
+/* Intl Tel Input Customization */
+.iti {
+    width: 100%;
+}
+
+.iti__country-list {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    white-space: normal;
+    /* Allow text wrapping */
+    max-width: 100vw;
+    /* Prevent horizontal overflow */
+    box-sizing: border-box;
+    /* Optional: Ensure scrollbar doesn't push it out? usually iti handles this */
+}
+
+@media (min-width: 576px) {
+    .iti__country-list {
+        max-width: 350px;
+        /* Constrain width on larger screens to look neat */
+    }
+}
+
+.iti__country-name {
+    color: #000 !important;
+}
+
+.iti__dial-code {
+    color: #666 !important;
+}
+
+.iti__country {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.iti__country:hover,
+.iti__country.iti__highlight {
+    background-color: #f8f9fa;
+}
+
+/* Ensure the input keeps the dark style */
+#heroPhone {
+    background-color: rgba(30, 30, 30, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+    padding-left: 50px !important;
+    /* Make space for flag */
+}
+
+/* Modal Phone Input - Keep Light */
+#modalPhone {
+    width: 100%;
+    padding-left: 50px;
+}
+
+.desktop-register-form .btn {
+    border-radius: 0;
+    /* Square buttons as per some luxury styles */
+    padding: 10px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* Mobile Button */
+.hero-content .btn-lg {
+    border-radius: 0;
+    font-family: 'Cinzel', serif;
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #EF314B;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn-lg:hover {
+    background-color: #d11f38;
+}
+
+.desktop-register-form .btn {
+    border-radius: 0;
+    padding: 10px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #EF314B;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.desktop-register-form .btn:hover {
+    background-color: #d11f38;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 0;
+    border: none;
+}
+
+.modal-header .btn-close {
+    background-size: 0.8em;
+}
+
+.modal-title {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.modal-body .form-control,
+.modal-body .form-select,
+.modal-body .input-group-text {
+    border-radius: 0;
+    background-color: #f8f9fa;
+    /* Light grey background for inputs */
+    border: 1px solid #dee2e6;
+    padding: 0.75rem 1rem;
+}
+
+.modal-body .form-control:focus {
+    box-shadow: none;
+    border-color: #000;
+    background-color: #fff;
+}
+
+.modal-body .btn-dark {
+    border-radius: 0;
+    background-color: #EF314B;
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-body .btn-dark:hover {
+    background-color: #d11f38;
+}
+
+.modal-body .disclaimer {
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
+/* CTA Section */
+.cta-title {
+    font-weight: 400;
+    font-size: 1.75rem;
+    letter-spacing: 0.5px;
+    color: #0c1824;
+}
+
+.cta-subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-section .btn-dark {
+    background-color: #EF314B;
+    border: 1px solid #EF314B;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.why-dubai-section .btn-dark {
+    background-color: #EF314B;
+    border: 1px solid #EF314B;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.why-dubai-section .btn-dark:hover {
+    background-color: #d11f38;
+    border-color: #d11f38;
+}
+
+.cta-section .btn-dark:hover {
+    background-color: #d11f38;
+    border-color: #d11f38;
+}
+
+/* Projects Grid Section */
+.section-title {
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 1rem;
+    color: #0c1824;
+    font-size: clamp(2rem, 6vw, 2.5rem) !important;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: #0c1824;
+}
+
+/* Project Card */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: transparent;
+    /* background: rgb(252, 252, 252) !important;
+    padding: 10px; */
+}
+
+.card-img-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img-top {
+    transition: transform 0.6s ease;
+}
+
+.project-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Why Invest in Dubai */
+.section-divider {
+    width: 90%;
+    max-width: 1200px;
+    border-top: 1px solid #000;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #fff5f5;
+    /* Light red tint */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e60000;
+    /* Red */
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover .icon-circle {
+    transform: translateY(-5px);
+    background-color: #ffe0e0;
+}
+
+.benefit-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #1a1a1a;
+    font-weight: 400;
+    max-width: 200px;
+    /* Force wrapping to look like reference */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-type {
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+}
+
+.project-name {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    color: #0c1824;
+    letter-spacing: 0.5px;
+}
+
+.project-meta {
+    font-family: 'Lato', sans-serif;
+    color: #6c757d;
+}
+
+.project-meta i {
+    width: 16px;
+    text-align: center;
+    color: #e60000;
+    /* Red */
+}
+
+.project-card .btn-outline-dark {
+    border-color: #d1cfcf;
+    color: #040404;
+    transition: all 0.3s ease;
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.project-card .btn-outline-dark:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+
+.bg-dark-blue {
+    background-color: #0c1824;
+}
+
+.stat-card {
+    background-color: #152433;
+    /* Lighter dark blue */
+    border-radius: 0;
+    /* Square corners */
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    background-color: #1a2c3d;
+}
+
+.stat-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(239, 49, 75, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EF314B;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover .stat-icon-wrapper {
+    background-color: rgba(239, 49, 75, 0.1);
+    border-color: #EF314B;
+}
+
+.stat-icon i {
+    color: #e60000 !important;
+}
+
+.stat-number {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.text-gold {
+    color: #f9f9f9 !important;
+}
+
+/* Footprint */
+.footprint-section {
+    background-color: #fff;
+}
+
+.map-container iframe {
+    filter: grayscale(100%) invert(0%) contrast(1.2);
+    /* Optional: Stylized map */
+    transition: all 0.3s ease;
+}
+.map-container iframe:hover {
+    filter: grayscale(0%) invert(0%) contrast(1.2);
+}
+
+/* Footer */
+.footer a {
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: #0c1824 !important;
+}
