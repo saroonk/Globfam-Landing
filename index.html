@@ -22,6 +22,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
     <!-- Intl Tel Input CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
 </head>
@@ -101,6 +104,87 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5 bg-white">
+        <div class="container py-4">
+            <h2 class="text-center section-title mb-5 text-uppercase">OUR GALLERY</h2>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item -->
+                <a href="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    class="gallery-item" data-fancybox="gallery"
+                    data-caption="Grand Interiors - Exquisite details and finishes">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Grand Interiors">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4 class="text-uppercase mb-2">Grand Interiors</h4>
+                            <p class="mb-0 small">Exquisite details and finishes</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Gallery Item -->
+                <a href="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-caption="Modern Design">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Modern Architecture">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4 class="text-uppercase mb-2">Modern Design</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Gallery Item -->
+                <a href="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-caption="Private Pools">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Private Pools">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4 class="text-uppercase mb-2">Private Pools</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Gallery Item -->
+                <a href="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-caption="Living Spaces">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Living Spaces">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4 class="text-uppercase mb-2">Living Spaces</h4>
+                        </div>
+                    </div>
+                </a>
+                <!-- Gallery Item -->
+                <a href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-caption="Gourmet Kitchens">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Gourmet Kitchens">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4 class="text-uppercase mb-2">Gourmet Kitchens</h4>
+                        </div>
+                    </div>
+                </a>
+                <!-- Gallery Item -->
+                <a href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    class="gallery-item" data-fancybox="gallery" data-caption="Elegant Dining">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                        alt="Elegant Dining">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4 class="text-uppercase mb-2">Elegant Dining</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Grid Section -->
     <section class="projects-section py-5 ">
         <div class="container py-4 px-md-3">
@@ -177,7 +261,7 @@
                 </div>
 
                 <!-- Project Card 4 -->
-                <div class="col-md-6 col-lg-4">
+                <!-- <div class="col-md-6 col-lg-4">
                     <div class="card project-card h-100 border-0">
                         <div class="card-img-wrapper">
                             <img src="https://placehold.co/600x500/b0b0b0/777?text=Montiva"
@@ -199,7 +283,6 @@
                     </div>
                 </div>
 
-                <!-- Project Card 5 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card project-card h-100 border-0">
                         <div class="card-img-wrapper">
@@ -222,7 +305,6 @@
                     </div>
                 </div>
 
-                <!-- Project Card 6 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card project-card h-100 border-0">
                         <div class="card-img-wrapper">
@@ -243,7 +325,107 @@
                                 data-bs-target="#registerModal">Learn More</a>
                         </div>
                     </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Nearby Locations Section -->
+    <section class="nearby-section py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="text-center section-title mb-5 text-uppercase">PRIME LOCATION & CONNECTIVITY</h2>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Location 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="location-card p-4 text-center h-100 bg-white shadow-sm">
+                        <div class="location-icon-wrapper mb-3">
+                            <i class="fas fa-plane-departure fa-2x text-primary-gold"></i>
+                        </div>
+                        <h4 class="location-name text-uppercase mb-2">Calicut Int. Airport</h4>
+                        <div class="location-stats d-flex justify-content-center align-items-center text-muted">
+                            <span class="me-3"><i class="fas fa-road me-1"></i> 12 km</span>
+                            <span><i class="far fa-clock me-1"></i> 30 min drive</span>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Location 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="location-card p-4 text-center h-100 bg-white shadow-sm">
+                        <div class="location-icon-wrapper mb-3">
+                            <i class="fas fa-train fa-2x text-primary-gold"></i>
+                        </div>
+                        <h4 class="location-name text-uppercase mb-2">Calicut Railway Station</h4>
+                        <div class="location-stats d-flex justify-content-center align-items-center text-muted">
+                            <span class="me-3"><i class="fas fa-walking me-1"></i> 300 m</span>
+                            <span><i class="far fa-clock me-1"></i> 5 min walk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="location-card p-4 text-center h-100 bg-white shadow-sm">
+                        <div class="location-icon-wrapper mb-3">
+                            <i class="fas fa-hospital-alt fa-2x text-primary-gold"></i>
+                        </div>
+                        <h4 class="location-name text-uppercase mb-2">City Hospital</h4>
+                        <div class="location-stats d-flex justify-content-center align-items-center text-muted">
+                            <span class="me-3"><i class="fas fa-road me-1"></i> 2 km</span>
+                            <span><i class="far fa-clock me-1"></i> 8 min drive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="location-card p-4 text-center h-100 bg-white shadow-sm">
+                        <div class="location-icon-wrapper mb-3">
+                            <i class="fas fa-graduation-cap fa-2x text-primary-gold"></i>
+                        </div>
+                        <h4 class="location-name text-uppercase mb-2">Int. School</h4>
+                        <div class="location-stats d-flex justify-content-center align-items-center text-muted">
+                            <span class="me-3"><i class="fas fa-road me-1"></i> 5 km</span>
+                            <span><i class="far fa-clock me-1"></i> 15 min drive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="location-card p-4 text-center h-100 bg-white shadow-sm">
+                        <div class="location-icon-wrapper mb-3">
+                            <i class="fas fa-shopping-bag fa-2x text-primary-gold"></i>
+                        </div>
+                        <h4 class="location-name text-uppercase mb-2">Shopping Mall</h4>
+                        <div class="location-stats d-flex justify-content-center align-items-center text-muted">
+                            <span class="me-3"><i class="fas fa-road me-1"></i> 3 km</span>
+                            <span><i class="far fa-clock me-1"></i> 10 min drive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="location-card p-4 text-center h-100 bg-white shadow-sm">
+                        <div class="location-icon-wrapper mb-3">
+                            <i class="fas fa-highway fa-2x text-primary-gold"></i>
+                        </div>
+                        <h4 class="location-name text-uppercase mb-2">Main Highway</h4>
+                        <div class="location-stats d-flex justify-content-center align-items-center text-muted">
+                            <span class="me-3"><i class="fas fa-road me-1"></i> 1 km</span>
+                            <span><i class="far fa-clock me-1"></i> 2 min drive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-dark btn-lg px-4 py-2 px-md-5 py-md-3 rounded-0 text-uppercase"
+                    data-bs-toggle="modal" data-bs-target="#registerModal">Download Location Map</button>
             </div>
         </div>
     </section>
@@ -580,6 +762,32 @@
         // document.getElementById("country_code").value = country.dialCode;
         // });
 
+    </script>
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        // Initialize Fancybox
+        Fancybox.bind("[data-fancybox='gallery']", {
+            // Your custom options
+            Toolbar: {
+                display: {
+                    left: ["infobar"],
+                    middle: [
+                        "zoomIn",
+                        "zoomOut",
+                        "toggle1to1",
+                        "rotateCCW",
+                        "rotateCW",
+                        "flipX",
+                        "flipY",
+                    ],
+                    right: ["slideshow", "thumbs", "download", "close"],
+                },
+            },
+            Thumbs: {
+                autoStart: false, // Turn off thumbs by default if preferred
+            },
+        });
     </script>
 </body>
 
