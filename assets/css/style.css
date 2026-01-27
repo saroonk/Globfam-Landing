@@ -680,11 +680,14 @@
 
  .location-card {
      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-     border: 1px solid rgba(0, 0, 0, 0.05);
-     border-radius: 0;
+     /* border: 1px solid rgba(0, 0, 0, 0.05); */
+     /* border-top-left-radius: 10px; */
+     /* border-top-right-radius: 20px; */
      position: relative;
      overflow: hidden;
      z-index: 1;
+     /* border: 5px solid red; */
+     /* corner-shape: scoop; */
  }
 
  /* Subtle Gradient overlay on hover */
@@ -741,7 +744,7 @@
      /* Force Brand Red */
      transition: color 0.4s ease;
  }
-
+mm
  .location-name {
      font-family: 'Cinzel', serif;
      font-weight: 600;
